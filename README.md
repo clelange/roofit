@@ -5,5 +5,5 @@ Original C-version can be found at https://root.cern.ch/root/html/tutorials/roof
 
 Currently available:
 
-1. [rf101_basics.py] 'BASIC FUNCTIONALITY' RooFit tutorial macro #101
-2. [rf102_dataimport.py] 'BASIC FUNCTIONALITY' RooFit tutorial macro #102
+1. [rf101_basics.py](rf101_basics.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #101
+2. [rf102_dataimport.py](rf102_dataimport.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #102
