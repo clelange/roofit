@@ -1,7 +1,7 @@
 # roofit
 pyROOT version of RooFit tutorials
 
-Original C-version can be found at https://root.cern.ch/root/html/tutorials/roofit/
+Original C-version can be found in [cpp](cpp) (taken from https://root.cern.ch/root/html/tutorials/roofit/)
 
 Currently available:
 
