@@ -65,7 +65,7 @@ def rf104_classfactory():
     a = ROOT.RooRealVar("a", "a", 1)
     b = ROOT.RooRealVar("b", "b", 2, -10, 10)
     y = ROOT.RooRealVar("y", "y", -10, 10)
-    pdf = MyPdfV3("pdf", "pdf", y, a, b)
+    pdf = ROOT.MyPdfV3("pdf", "pdf", y, a, b)
 
     # Generate toy data from pdf and plot data and p.d.f on frame
     frame1 = y.frame(ROOT.RooFit.Title("Compiled class MyPdfV3"))
