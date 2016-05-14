@@ -1,84 +1,91 @@
 #####################################
 #
-# 'BASIC FUNCTIONALITY' RooFit tutorial macro #105
-# 
-#  Demonstration of binding ROOT Math functions as RooFit functions
+# 'BASIC FUNCTIONALITY' ROOT.RooFit tutorial macro #105
+#
+#  Demonstration of binding ROOT Math functions as ROOT.RooFit functions
 #  and pdfs
 #
-# 07/2008 - Wouter Verkerke 
-# 
-####################################/
+# 07/2008 - Wouter Verkerke
+#
+# /
 
-from ROOT import *
+import ROOT
+
 
 def rf105_funcbinding():
 
-  # B i n d   T M a t h : : E r f   C   f u n c t i o n
-  # ---------------------------------------------------
+    # B i n d   ROOT.T M a t h : : E r f   C   f u n c t i o n
+    # ---------------------------------------------------
 
-  # Bind one-dimensional TMath.Erf function as RooAbsReal function
-  x = RooRealVar("x","x",-3,3) 
-  erf = RooFit.bindFunction("erf",TMath.Erf,x) 
+    # Bind one-dimensional ROOT.TMath.Erf function as ROOT.RooAbsReal function
+    x = ROOT.RooRealVar("x", "x", -3, 3)
+    erf = ROOT.RooFit.bindFunction("erf", ROOT.TMath.Erf, x)
 
-  # Print erf definition
-  erf.Print() 
+    # Print erf definition
+    erf.Print()
 
-  # Plot erf on frame 
-  frame1 = x.frame(RooFit.Title("TMath.Erf bound as RooFit function")) 
-  erf.plotOn(frame1) 
+    # Plot erf on frame
+    frame1 = x.frame(ROOT.RooFit.Title(
+        "TMath.Erf bound as ROOT.RooFit function"))
+    erf.plotOn(frame1)
 
+    # B i n d   R O O ROOT.T : : M a t h : : b e t a _ p d f   C   f u n c t i o n
+    # -----------------------------------------------------------------------
 
-  # B i n d   R O O T : : M a t h : : b e t a _ p d f   C   f u n c t i o n
-  # -----------------------------------------------------------------------
+    # Bind pdf ROOT.Math.Beta with three variables as ROOT.RooAbsPdf function
+    x2 = ROOT.RooRealVar("x2", "x2", 0, 0.999)
+    a = ROOT.RooRealVar("a", "a", 5, 0, 10)
+    b = ROOT.RooRealVar("b", "b", 2, 0, 10)
+    beta = ROOT.RooFit.bindPdf("beta", ROOT.Math.beta_pdf, x2, a, b)
 
-  # Bind pdf ROOT.Math.Beta with three variables as RooAbsPdf function
-  x2 = RooRealVar("x2","x2",0,0.999) 
-  a = RooRealVar("a","a",5,0,10) 
-  b = RooRealVar("b","b",2,0,10) 
-  beta = RooFit.bindPdf("beta",ROOT.Math.beta_pdf,x2,a,b) 
+    # Perf beta definition
+    beta.Print()
 
-  # Perf beta definition
-  beta.Print() 
+    # Generate some events and fit
+    data = beta.generate(ROOT.RooArgSet(x2), 10000)
+    beta.fitTo(*data)
 
-  # Generate some events and fit
-  data = beta.generate(RooArgSet(x2),10000) 
-  beta.fitTo(*data) 
+    # Plot data and pdf on frame
+    frame2 = x2.frame(ROOT.RooFit.Title(
+        "ROOT.Math.Beta bound as ROOT.RooFit pdf"))
+    data.plotOn(frame2)
+    beta.plotOn(frame2)
 
-  # Plot data and pdf on frame
-  frame2 = x2.frame(RooFit.Title("ROOT.Math.Beta bound as RooFit pdf")) 
-  data.plotOn(frame2) 
-  beta.plotOn(frame2) 
+    # B i n d   R O O ROOT.T   ROOT.T F 1   a s   R o o F i t   f u n c t i o n
+    # ---------------------------------------------------------------
 
+    # Create a ROOT ROOT.TF1 function
+    fa1 = ROOT.TF1("fa1", "sin(x)/x", 0, 10)
 
+    # Create an observable
+    x3 = ROOT.RooRealVar("x3", "x3", 0.01, 20)
 
-  # B i n d   R O O T   T F 1   a s   R o o F i t   f u n c t i o n
-  # ---------------------------------------------------------------
+    # Create binding of ROOT.TF1 object to above observable
+    rfa1 = ROOT.bindFunction(fa1, x3)
 
-  # Create a ROOT TF1 function
-  fa1 = TF1("fa1","sin(x)/x",0,10)
-  
-  # Create an observable 
-  x3 = RooRealVar("x3","x3",0.01,20) 
+    # Print rfa1 definition
+    rfa1.Print()
 
-  # Create binding of TF1 object to above observable
-  rfa1 = bindFunction(fa1,x3) 
+    # Make plot frame in observable, ROOT.TF1 binding function
+    frame3 = x3.frame(ROOT.RooFit.Title("TF1 bound as ROOT.RooFit function"))
+    rfa1.plotOn(frame3)
 
-  # Print rfa1 definition
-  rfa1.Print() 
+    c = ROOT.TCanvas("rf105_funcbinding", "rf105_funcbinding", 1200, 400)
+    c.Divide(3)
+    c.cd(1)
+    ROOT.gPad.SetLeftMargin(0.15)
+    frame1.GetYaxis().SetTitleOffset(1.6)
+    frame1.Draw()
+    c.cd(2)
+    ROOT.gPad.SetLeftMargin(0.15)
+    frame2.GetYaxis().SetTitleOffset(1.6)
+    frame2.Draw()
+    c.cd(3)
+    ROOT.gPad.SetLeftMargin(0.15)
+    frame3.GetYaxis().SetTitleOffset(1.6)
+    frame3.Draw()
 
-  # Make plot frame in observable, TF1 binding function
-  frame3 = x3.frame(RooFit.Title("TF1 bound as RooFit function")) 
-  rfa1.plotOn(frame3) 
-
-
-
-  c = TCanvas("rf105_funcbinding","rf105_funcbinding",1200,400) 
-  c.Divide(3) 
-  c.cd(1) ; gPad.SetLeftMargin(0.15) ; frame1.GetYaxis().SetTitleOffset(1.6) ; frame1.Draw() 
-  c.cd(2) ; gPad.SetLeftMargin(0.15) ; frame2.GetYaxis().SetTitleOffset(1.6) ; frame2.Draw() 
-  c.cd(3) ; gPad.SetLeftMargin(0.15) ; frame3.GetYaxis().SetTitleOffset(1.6) ; frame3.Draw() 
-  
-  c.SaveAs("rf105_funcbinding.png")
+    c.SaveAs("rf105_funcbinding.png")
 
 if __name__ == "__main__":
-  rf105_funcbinding()
+    rf105_funcbinding()
