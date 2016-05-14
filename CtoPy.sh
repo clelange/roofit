@@ -12,6 +12,9 @@ sed -i '.bak' 's|,Title|,RooFit.Title|g' ${FILE}
 sed -i '.bak' 's|(Name|(RooFit.Name|g' ${FILE}
 sed -i '.bak' 's|(Range|(RooFit.Range|g' ${FILE}
 sed -i '.bak' 's|,Layout|,RooFit.Layout|g' ${FILE}
+sed -i '.bak' 's|,Components|,RooFit.Components|g' ${FILE}
+sed -i '.bak' 's|,LineStyle|,RooFit.LineStyle|g' ${FILE}
+sed -i '.bak' 's|,Normalization|,RooFit.Normalization|g' ${FILE}
 sed -i '.bak' 's|,DataError|,RooFit.DataError|g' ${FILE}
 sed -i '.bak' 's|,RooConst|,RooFit.RooConst|g' ${FILE}
 sed -i '.bak' 's|,Bins|,RooFit.Bins|g' ${FILE}
@@ -28,6 +31,7 @@ sed -i '.bak' 's/(Roo/(ROOT.Roo/g' ${FILE}
 sed -i '.bak' 's/,Roo/, ROOT.Roo/g' ${FILE}
 sed -i '.bak' 's/ Roo/ ROOT.Roo/g' ${FILE}
 sed -i '.bak' 's/Color(k/Color(ROOT.k/g' ${FILE}
+sed -i '.bak' 's/Style(k/Style(ROOT.k/g' ${FILE}
 sed -i '.bak' 's/,"/, "/g' ${FILE}
 
 rm ${FILE}.bak
