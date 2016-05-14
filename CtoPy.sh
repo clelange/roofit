@@ -25,7 +25,9 @@ sed -i '.bak' 's/ T/ ROOT.T/g' ${FILE}
 sed -i '.bak' 's/ gPad/ ROOT.gPad/g' ${FILE}
 sed -i '.bak' 's/ Roo/ ROOT.Roo/g' ${FILE}
 sed -i '.bak' 's/(Roo/(ROOT.Roo/g' ${FILE}
-sed -i '.bak' 's/,Roo/,ROOT.Roo/g' ${FILE}
+sed -i '.bak' 's/,Roo/, ROOT.Roo/g' ${FILE}
+sed -i '.bak' 's/ Roo/ ROOT.Roo/g' ${FILE}
 sed -i '.bak' 's/Color(k/Color(ROOT.k/g' ${FILE}
+sed -i '.bak' 's/,"/, "/g' ${FILE}
 
 rm ${FILE}.bak
