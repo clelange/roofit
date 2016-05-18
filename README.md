@@ -16,3 +16,5 @@ Currently available:
 9. [rf109_chi2residpull.py](rf109_chi2residpull.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #109
 10. [rf110_normintegration.py](rf110_normintegration.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #110
 11. [rf111_derivatives.py](rf111_derivatives.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #111
+12. [rf201_composite.py](rf201_composite.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #201
+13. [rf202_extendedmlfit.py](rf202_extendedmlfit.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #202

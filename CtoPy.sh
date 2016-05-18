@@ -13,11 +13,19 @@ sed -i '.bak' 's|(Name|(RooFit.Name|g' ${FILE}
 sed -i '.bak' 's|(Range|(RooFit.Range|g' ${FILE}
 sed -i '.bak' 's|,Layout|,RooFit.Layout|g' ${FILE}
 sed -i '.bak' 's|,Components|,RooFit.Components|g' ${FILE}
-sed -i '.bak' 's|,LineStyle|,RooFit.LineStyle|g' ${FILE}
+sed -i '.bak' 's|,Line|,RooFit.Line|g' ${FILE}
+sed -i '.bak' 's|, Line|, RooFit.Line|g' ${FILE}
+sed -i '.bak' 's|,Fill|,RooFit.Fill|g' ${FILE}
+sed -i '.bak' 's|, Fill|, RooFit.Fill|g' ${FILE}
+sed -i '.bak' 's|,Visualize|,RooFit.Visualize|g' ${FILE}
+sed -i '.bak' 's|, Visualize|, RooFit.Visualize|g' ${FILE}
+sed -i '.bak' 's|,Draw|,RooFit.Draw|g' ${FILE}
+sed -i '.bak' 's|, Draw|, RooFit.Draw|g' ${FILE}
 sed -i '.bak' 's|,Normalization|,RooFit.Normalization|g' ${FILE}
 sed -i '.bak' 's|,DataError|,RooFit.DataError|g' ${FILE}
 sed -i '.bak' 's|,RooConst|,RooFit.RooConst|g' ${FILE}
 sed -i '.bak' 's|,Bins|,RooFit.Bins|g' ${FILE}
+sed -i '.bak' 's|(Bins|(RooFit.Bins|g' ${FILE}
 sed -i '.bak' 's|,Save()|,RooFit.Save()|g' ${FILE}
 sed -i '.bak' 's|,.RooConst(|,RooFit.RooConst(|g' ${FILE}
 sed -i '.bak' 's/;*$//g' ${FILE}
