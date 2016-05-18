@@ -61,7 +61,7 @@ def rf105_funcbinding():
     x3 = ROOT.RooRealVar("x3", "x3", 0.01, 20)
 
     # Create binding of ROOT.TF1 object to above observable
-    rfa1 = ROOT.bindFunction(fa1, x3)
+    rfa1 = ROOT.RooFit.bindFunction(fa1, x3)
 
     # Print rfa1 definition
     rfa1.Print()
