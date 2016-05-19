@@ -29,7 +29,7 @@ def rf211_paramconv():
     # Block function in mean
     a = ROOT.RooRealVar("a", "a", 2, 1, 10)
     model_mean = ROOT.RooGenericPdf(
-      "model_mean", "abs(mean)<a", ROOT.RooArgList(mean, a))
+        "model_mean", "abs(mean)<a", ROOT.RooArgList(mean, a))
 
     # Convolution in mean model = g(x,mean,sigma) (x) block(mean)
     x.setBins(1000, "cache")
@@ -58,7 +58,7 @@ def rf211_paramconv():
 
     # Make 2d histogram of model(x;mean)
     hh = model.createHistogram("hh", x, ROOT.RooFit.Binning(50), ROOT.RooFit.YVar(
-      mean, ROOT.RooFit.Binning(50)), ROOT.RooFit.ConditionalObservables(mean))
+        mean, ROOT.RooFit.Binning(50)), ROOT.RooFit.ConditionalObservables(ROOT.RooArgSet(mean)))
     hh.SetTitle("histogram of model(x|mean)")
     hh.SetLineColor(ROOT.kBlue)
 
