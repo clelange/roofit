@@ -69,7 +69,7 @@ def rf210_angularconv():
     Mpsi.plotOn(frame1)
 
     # Overlay comparison to unsmeared physics p.d.f ROOT.T(psi)
-    ROOT.Tpsi.plotOn(frame1, ROOT.RooFit.LineColor(ROOT.kRed))
+    Tpsi.plotOn(frame1, ROOT.RooFit.LineColor(ROOT.kRed))
 
     # C o n s t r u c t   c o n v o l u t i o n   p d f   i n   c o s ( p s i )
     # --------------------------------------------------------------------------
@@ -103,7 +103,7 @@ def rf210_angularconv():
     Mcpsi.plotOn(frame2)
 
     # Overlay comparison to unsmeared physics p.d.f ROOT.Tf(cpsi)
-    ROOT.Tcpsi.plotOn(frame2, ROOT.RooFit.LineColor(ROOT.kRed))
+    Tcpsi.plotOn(frame2, ROOT.RooFit.LineColor(ROOT.kRed))
 
     # Draw frame on canvas
     c = ROOT.TCanvas("rf210_angularconv", "rf210_angularconv", 800, 400)
