@@ -29,7 +29,8 @@ def rf610_visualerror():
     bkg = ROOT.RooGaussian("bkg", "bkg", x, m2, s2)
 
     fsig = ROOT.RooRealVar("fsig", "fsig", 0.33, 0, 1)
-    model = ROOT.RooAddPdf("model", "model", ROOT.RooArgList(sig, bkg), ROOT.RooArgList(fsig))
+    model = ROOT.RooAddPdf("model", "model", ROOT.RooArgList(
+        sig, bkg), ROOT.RooArgList(fsig))
 
     # Create binned dataset
     x.setBins(25)

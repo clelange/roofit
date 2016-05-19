@@ -18,3 +18,14 @@ Currently available:
 11. [rf111_derivatives.py](rf111_derivatives.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #111
 12. [rf201_composite.py](rf201_composite.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #201
 13. [rf202_extendedmlfit.py](rf202_extendedmlfit.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #202
+14. [rf203_ranges.py](rf203_ranges.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #203
+15. [rf204_extrangefit.py](rf204_extrangefit.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #204
+16. [rf205_compplot.py](rf205_compplot.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #205
+17. [rf206_treevistools.py](rf206_treevistools.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #206
+18. [rf207_comptools.py](rf207_comptools.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #207
+19. [rf208_convolution.py](rf208_convolution.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #208
+20. [rf209_anaconv.py](rf209_anaconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #209
+21. [rf210_angularconv.py](rf210_angularconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #210  new
+22. [rf211_paramconv.py](rf211_paramconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #211
+
+68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610

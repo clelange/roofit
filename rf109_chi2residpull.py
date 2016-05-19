@@ -26,7 +26,7 @@ def rf109_chi2residpull():
     sigma = ROOT.RooRealVar("sigma", "sigma", 3, 0.1, 10)
     mean = ROOT.RooRealVar("mean", "mean", 0, -10, 10)
     gauss = ROOT.RooGaussian(
-        "gauss", "gauss", x, ROOT.RooFit.RooConst(0), sigma)
+        "gauss", "gauss", x, mean, sigma)
 
     # Generate a sample of 1000 events with sigma=3
     data = gauss.generate(ROOT.RooArgSet(x), 10000)
