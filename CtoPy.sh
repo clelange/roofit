@@ -25,6 +25,7 @@ sed -i '.bak' 's|, Save(|, RooFit.Save(|g' ${FILE}
 sed -i '.bak' 's|,Save(|,RooFit.Save(|g' ${FILE}
 sed -i '.bak' 's|,Binning(|,RooFit.Binning(|g' ${FILE}
 sed -i '.bak' 's|,YVar(|,RooFit.YVar(|g' ${FILE}
+sed -i '.bak' 's|,Conditional(|,RooFit.Conditional(|g' ${FILE}
 sed -i '.bak' 's|, Range(|, RooFit.Range(|g' ${FILE}
 sed -i '.bak' 's|,Range(|,RooFit.Range(|g' ${FILE}
 sed -i '.bak' 's|, Extended(|, RooFit.Extended(|g' ${FILE}
@@ -78,5 +79,13 @@ sed -i '.bak' 's/ROOT.RooLandau landau/landau = ROOT.RooLandau/g' ${FILE}
 sed -i '.bak' 's/ROOT.RooRealVar mg/mg = ROOT.RooRealVar/g' ${FILE}
 sed -i '.bak' 's/ROOT.RooRealVar sg/sg = ROOT.RooRealVar/g' ${FILE}
 sed -i '.bak' 's/ROOT.RooGaussian gauss/gauss = ROOT.RooGaussian/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooRealVar dterr/dterr = ROOT.RooRealVar/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooRealVar dt/dt = ROOT.RooRealVar/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooRealVar bias/bias = ROOT.RooRealVar/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooGaussModel gm/gm = ROOT.RooGaussModel/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooRealVar tau/tau = ROOT.RooRealVar/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooDecay decay_gm/decay_gm = ROOT.RooDecay/g' ${FILE}
+sed -i '.bak' 's/ROOT.RooLandau pdfDtErr/pdfDtErr = ROOT.RooLandau/g' ${FILE}
+
 
 rm ${FILE}.bak
