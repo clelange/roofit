@@ -23,6 +23,8 @@ sed -i '.bak' 's|,Draw|,RooFit.Draw|g' ${FILE}
 sed -i '.bak' 's|, Draw|, RooFit.Draw|g' ${FILE}
 sed -i '.bak' 's|, Save(|, RooFit.Save(|g' ${FILE}
 sed -i '.bak' 's|,Save(|,RooFit.Save(|g' ${FILE}
+sed -i '.bak' 's|,Binning(|,RooFit.Binning(|g' ${FILE}
+sed -i '.bak' 's|,YVar(|,RooFit.YVar(|g' ${FILE}
 sed -i '.bak' 's|, Range(|, RooFit.Range(|g' ${FILE}
 sed -i '.bak' 's|,Range(|,RooFit.Range(|g' ${FILE}
 sed -i '.bak' 's|, Extended(|, RooFit.Extended(|g' ${FILE}

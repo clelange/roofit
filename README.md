@@ -25,7 +25,23 @@ Currently available:
 18. [rf207_comptools.py](rf207_comptools.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #207
 19. [rf208_convolution.py](rf208_convolution.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #208
 20. [rf209_anaconv.py](rf209_anaconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #209
-21. [rf210_angularconv.py](rf210_angularconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #210  new
+21. [rf210_angularconv.py](rf210_angularconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #210
 22. [rf211_paramconv.py](rf211_paramconv.py) 'ADDITION AND CONVOLUTION' RooFit tutorial macro #211
+23. [rf301_composition.py](rf301_composition.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #301
+24. [rf302_utilfuncs.py](rf302_utilfuncs.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #302
+25. ~~[rf303_conditional.py](rf303_conditional.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #303~~ - not working
+26. [rf304_uncorrprod.py](rf304_uncorrprod.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #304
+27. [rf305_condcorrprod.py](rf305_condcorrprod.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #305
+28. [rf306_condpereventerrors.py](rf306_condpereventerrors.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #306
+29. [rf307_fullpereventerrors.py](rf307_fullpereventerrors.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #307
+30. [rf308_normintegration2d.py](rf308_normintegration2d.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #308
+31. [rf309_ndimplot.py](rf309_ndimplot.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #308
+32. [rf310_sliceplot.py](rf310_sliceplot.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #309
+33. [rf311_rangeplot.py](rf311_rangeplot.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #310
+34. [rf312_multirangefit.py](rf312_multirangefit.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #312
+35. [rf313_paramranges.py](rf313_paramranges.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #313
+36. [rf314_paramfitrange.py](rf314_paramfitrange.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #314
+37. [rf315_projectpdf.py](rf315_projectpdf.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #315
+38. [rf316_llratioplot.py](rf316_llratioplot.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #316
 
 68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610
