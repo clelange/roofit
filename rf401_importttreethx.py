@@ -40,13 +40,18 @@ def rf401_importttreethx():
     dh.Print()
 
     # Alternative constructor form for importing multiple histograms
-    ROOT.gInterpreter.GenerateDictionary("std::pair<std::string, TH1*>", "map;string;TH1.h")
-    ROOT.gInterpreter.GenerateDictionary("std::map<std::string, TH1*>", "map;string;TH1.h")
+    ROOT.gInterpreter.GenerateDictionary(
+        "std::pair<std::string, TH1*>", "map;string;TH1.h")
+    ROOT.gInterpreter.GenerateDictionary(
+        "std::map<std::string, TH1*>", "map;string;TH1.h")
     hmap = ROOT.std.map('string, TH1*')()
     hmap.keepalive = list()
-    hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleA", hh_1))
-    hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleB", hh_2))
-    hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleC", hh_3))
+    hmap.insert(hmap.cbegin(), ROOT.std.pair(
+        "const std::string,TH1*")("SampleA", hh_1))
+    hmap.insert(hmap.cbegin(), ROOT.std.pair(
+        "const std::string,TH1*")("SampleB", hh_2))
+    hmap.insert(hmap.cbegin(), ROOT.std.pair(
+        "const std::string,TH1*")("SampleC", hh_3))
     dh2 = ROOT.RooDataHist("dh", "dh", ROOT.RooArgList(x), c, hmap)
     dh2.Print()
 
@@ -60,11 +65,13 @@ def rf401_importttreethx():
     z = ROOT.RooRealVar("z", "z", -10, 10)
 
     # Import only observables (y,z)
-    ds = ROOT.RooDataSet("ds", "ds", ROOT.RooArgSet(x, y), ROOT.RooFit.Import(tree))
+    ds = ROOT.RooDataSet("ds", "ds", ROOT.RooArgSet(x, y),
+                         ROOT.RooFit.Import(tree))
     ds.Print()
 
     # Import observables (x,y,z) but only event for which (y+z<0) is ROOT.True
-    ds2 = ROOT.RooDataSet("ds2", "ds2", ROOT.RooArgSet(x, y, z), ROOT.RooFit.Import(tree), ROOT.RooFit.Cut("y+z<0"))
+    ds2 = ROOT.RooDataSet("ds2", "ds2", ROOT.RooArgSet(
+        x, y, z), ROOT.RooFit.Import(tree), ROOT.RooFit.Cut("y+z<0"))
     ds2.Print()
 
     # I m p o r t i n g   i n t e g e r   ROOT.T ROOT.T r e e   b r a n c h e s
@@ -72,7 +79,8 @@ def rf401_importttreethx():
 
     # Import integer tree branch as ROOT.RooRealVar
     i = ROOT.RooRealVar("i", "i", 0, 5)
-    ds3 = ROOT.RooDataSet("ds3", "ds3", ROOT.RooArgSet(i, x), ROOT.RooFit.Import(tree))
+    ds3 = ROOT.RooDataSet("ds3", "ds3", ROOT.RooArgSet(
+        i, x), ROOT.RooFit.Import(tree))
     ds3.Print()
 
     # Define category i
@@ -82,7 +90,8 @@ def rf401_importttreethx():
 
     # Import integer tree branch as ROOT.RooCategory (only events with i==0 and i==1
     # will be imported as those are the only defined states)
-    ds4 = ROOT.RooDataSet("ds4", "ds4", ROOT.RooArgSet(icat, x), ROOT.RooFit.Import(tree))
+    ds4 = ROOT.RooDataSet("ds4", "ds4", ROOT.RooArgSet(
+        icat, x), ROOT.RooFit.Import(tree))
     ds4.Print()
 
     # I m p o r t  m u l t i p l e   R o o D a t a S e t s   i n t o   a   R o o D a t a S e t

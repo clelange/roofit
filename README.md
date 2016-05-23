@@ -43,5 +43,12 @@ Currently available:
 36. [rf314_paramfitrange.py](rf314_paramfitrange.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #314
 37. [rf315_projectpdf.py](rf315_projectpdf.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #315
 38. [rf316_llratioplot.py](rf316_llratioplot.py) 'MULTIDIMENSIONAL MODELS' RooFit tutorial macro #316
+39. [rf401_importttreethx.py](rf401_importttreethx.py) 'DATA AND CATEGORIES' RooFit tutorial macro #401
+40. [rf402_datahandling.py](rf402_datahandling.py) 'DATA AND CATEGORIES' RooFit tutorial macro #402
+41. [rf403_weightedevts.py](rf403_weightedevts.py) 'DATA AND CATEGORIES' RooFit tutorial macro #403
+42. [rf404_categories.py](rf404_categories.py) 'DATA AND CATEGORIES' RooFit tutorial macro #404
+43. [rf405_realtocatfuncs.py](rf405_realtocatfuncs.py) 'DATA AND CATEGORIES' RooFit tutorial macro #405
+44. [rf406_cattocatfuncs.py](rf406_cattocatfuncs.py) 'DATA AND CATEGORIES' RooFit tutorial macro #406
+45. [rf407_latextables.py](rf407_latextables.py) 'DATA AND CATEGORIES' RooFit tutorial macro #407
 
 68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610
