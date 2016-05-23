@@ -69,7 +69,8 @@ def rf509_wsinteractive():
     # correct syntax
     bkg = w.pdf("bkg")
     model.plotOn(frame)
-    model.plotOn(frame, ROOT.RooFit.Components(ROOT.RooArgSet(bkg)),
+    ras_bkg = ROOT.RooArgSet(bkg)
+    model.plotOn(frame, ROOT.RooFit.Components(ras_bkg),
                  ROOT.RooFit.LineStyle(ROOT.kDashed))
 
     # Draw the frame on the canvas

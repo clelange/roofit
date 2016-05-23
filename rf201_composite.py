@@ -72,12 +72,14 @@ def rf201_composite():
     model.plotOn(xframe)
 
     # Overlay the background component of model with a dashed line
-    model.plotOn(xframe, ROOT.RooFit.Components(
-        ROOT.RooArgSet(bkg)), ROOT.RooFit.LineStyle(ROOT.kDashed))
+    ras_bkg = ROOT.RooArgSet(bkg)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg),
+                 ROOT.RooFit.LineStyle(ROOT.kDashed))
 
     # Overlay the background+sig2 components of model with a dotted line
-    model.plotOn(xframe, ROOT.RooFit.Components(
-        ROOT.RooArgSet(bkg, sig2)), ROOT.RooFit.LineStyle(ROOT.kDotted))
+    ras_bkg_sig2 = ROOT.RooArgSet(bkg, sig2)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg_sig2),
+                 ROOT.RooFit.LineStyle(ROOT.kDotted))
 
     # Print structure of composite p.d.f.
     model.Print("t")
@@ -91,8 +93,7 @@ def rf201_composite():
     #   model2 = bkg + (sig1 + sig2)
     #
     model2 = ROOT.RooAddPdf("model", "g1+g2+a", ROOT.RooArgList(bkg,
-                            sig1, sig2), ROOT.RooArgList(bkgfrac, sig1frac),
-                            ROOT.kTRUE)
+                                                                sig1, sig2), ROOT.RooArgList(bkgfrac, sig1frac), ROOT.kTRUE)
 
     # NB: Each coefficient is interpreted as the fraction of the
     # left-hand component of the i-th recursive sum, i.e.
@@ -105,7 +106,7 @@ def rf201_composite():
     # ---------------------------------------------------------
     model2.plotOn(xframe, ROOT.RooFit.LineColor(ROOT.kRed),
                   ROOT.RooFit.LineStyle(ROOT.kDashed))
-    model2.plotOn(xframe, ROOT.RooFit.Components(ROOT.RooArgSet(bkg, sig2)),
+    model2.plotOn(xframe, ROOT.RooFit.Components(ras_bkg_sig2),
                   ROOT.RooFit.LineColor(ROOT.kRed), ROOT.RooFit.LineStyle(ROOT.kDashed))
     model2.Print("t")
 

@@ -74,11 +74,13 @@ def rf202_extendedmlfit():
         1.0, ROOT.RooAbsReal.RelativeExpected))
 
     # Overlay the background component of model with a dashed line
-    model.plotOn(xframe, ROOT.RooFit.Components(ROOT.RooArgSet(bkg)), ROOT.RooFit.LineStyle(ROOT.kDashed),
+    ras_bkg = ROOT.RooArgSet(bkg)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg), ROOT.RooFit.LineStyle(ROOT.kDashed),
                  ROOT.RooFit.Normalization(1.0, ROOT.RooAbsReal.RelativeExpected))
 
     # Overlay the background+sig2 components of model with a dotted line
-    model.plotOn(xframe, ROOT.RooFit.Components(ROOT.RooArgSet(bkg, sig2)), ROOT.RooFit.LineStyle(
+    ras_bkg_sig2 = ROOT.RooArgSet(bkg, sig2)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg_sig2), ROOT.RooFit.LineStyle(
         ROOT.kDotted), ROOT.RooFit.Normalization(1.0, ROOT.RooAbsReal.RelativeExpected))
 
     # Print structure of composite p.d.f.

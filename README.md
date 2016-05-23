@@ -68,8 +68,16 @@ Currently available:
 61. [rf603_multicpu.py](rf603_multicpu.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #603
 62. [rf604_constraints.py](rf604_constraints.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #604
 63. [rf605_profilell.py](rf605_profilell.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #605
-64. [rf606_nllerrorhandling.py](rf606_nllerrorhandling.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #606  new
+64. [rf606_nllerrorhandling.py](rf606_nllerrorhandling.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #606
 65. [rf607_fitresult.py](rf607_fitresult.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #607
 66. [rf608_fitresultaspdf.py](rf608_fitresultaspdf.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #608
 67. [rf609_xychi2fit.py](rf609_xychi2fit.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #609
 68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610
+69. [rf701_efficiencyfit.py](rf701_efficiencyfit.py) 'SPECIAL PDFS' RooFit tutorial macro #701
+70. [rf702_efficiencyfit_2D.py](rf702_efficiencyfit_2D.py) 'SPECIAL PDFS' RooFit tutorial macro #702
+71. [rf703_effpdfprod.py](rf703_effpdfprod.py) 'SPECIAL PDFS' RooFit tutorial macro #703
+72. [rf704_amplitudefit.py](rf704_amplitudefit.py) 'SPECIAL PDFS' RooFit tutorial macro #704
+73. [rf705_linearmorph.py](rf705_linearmorph.py) 'SPECIAL PDFS' RooFit tutorial macro #705
+74. [rf706_histpdf.py](rf706_histpdf.py) 'SPECIAL PDFS' RooFit tutorial macro #706
+75. [rf707_kernelestimation.py](rf707_kernelestimation.py) 'SPECIAL PDFS' RooFit tutorial macro #707
+76. [rf708_bphysics.py](rf708_bphysics.py) 'SPECIAL PDFS' RooFit tutorial macro #708

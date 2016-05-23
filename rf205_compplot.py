@@ -75,18 +75,21 @@ def rf205_compplot():
     # --------------------------------------------------------------------
 
     # Plot single background component specified by object reference
+    ras_bkg = ROOT.RooArgSet(bkg)
     model.plotOn(xframe, ROOT.RooFit.Components(
-        ROOT.RooArgSet(bkg)), ROOT.RooFit.LineColor(ROOT.kRed))
+        ras_bkg), ROOT.RooFit.LineColor(ROOT.kRed))
 
     # Plot single background component specified by object reference
-    model.plotOn(xframe, ROOT.RooFit.Components(ROOT.RooArgSet(
-        bkg2)), ROOT.RooFit.LineStyle(ROOT.kDashed), ROOT.RooFit.LineColor(ROOT.kRed))
+    ras_bkg2 = ROOT.RooArgSet(bkg2)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg2), ROOT.RooFit.LineStyle(
+        ROOT.kDashed), ROOT.RooFit.LineColor(ROOT.kRed))
 
     # Plot multiple background components specified by object reference
     # Note that specified components may occur at any level in object tree
     # (e.g bkg is component of 'model' and 'sig2' is component 'sig')
-    model.plotOn(xframe, ROOT.RooFit.Components(
-        ROOT.RooArgSet(bkg, sig2)), ROOT.RooFit.LineStyle(ROOT.kDotted))
+    ras_bkg_sig2 = ROOT.RooArgSet(bkg, sig2)
+    model.plotOn(xframe, ROOT.RooFit.Components(ras_bkg_sig2),
+                 ROOT.RooFit.LineStyle(ROOT.kDotted))
 
     # M a k e   c o m p o n e n t   b y   n a m e  /   r e g e x p
     # ------------------------------------------------------------
