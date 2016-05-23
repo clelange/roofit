@@ -42,12 +42,11 @@ def rf401_importttreethx():
     # Alternative constructor form for importing multiple histograms
     ROOT.gInterpreter.GenerateDictionary("std::pair<std::string, TH1*>", "map;string;TH1.h")
     ROOT.gInterpreter.GenerateDictionary("std::map<std::string, TH1*>", "map;string;TH1.h")
-    # ROOT.gInterpreter.GenerateDictionary("std::pair<std::map<string,TH1*>::iterator, bool>", "map;string;TH1.h")
     hmap = ROOT.std.map('string, TH1*')()
-    # hmap["SampleA"] = hh_1
+    hmap.keepalive = list()
     hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleA", hh_1))
-    # hmap["SampleB"] = hh_2
-    # hmap["SampleC"] = hh_3
+    hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleB", hh_2))
+    hmap.insert(hmap.cbegin(), ROOT.std.pair("const std::string,TH1*")("SampleC", hh_3))
     dh2 = ROOT.RooDataHist("dh", "dh", ROOT.RooArgList(x), c, hmap)
     dh2.Print()
 
@@ -123,8 +122,8 @@ def makeTTree():
     pi = array('i', [0])
     tree.Branch("x", px, "x/D")
     tree.Branch("y", py, "y/D")
-    tree.Branch("z", py, "z/D")
-    tree.Branch("i", py, "i/I")
+    tree.Branch("z", pz, "z/D")
+    tree.Branch("i", pi, "i/I")
     for i in range(100):
         px[0] = ROOT.gRandom.Gaus(0, 3)
         py[0] = ROOT.gRandom.Uniform() * 30 - 15
