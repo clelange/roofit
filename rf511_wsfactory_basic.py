@@ -61,7 +61,11 @@ def rf511_wsfactory_basic(compact=ROOT.kFALSE):
 
     # Construct a KEYS p.d.f. passing a dataset name and an enum type defining the
     # mirroring strategy
-    w.factory("KeysPdf::k(x,data,NoMirror,0.2)")
+    # w.factory("KeysPdf::k(x,data,NoMirror,0.2)")
+    # Workaround for pyROOT
+    x = w.var("x")
+    k = ROOT.RooKeysPdf("k", "k", x, data, ROOT.RooKeysPdf.NoMirror, 0.2)
+    getattr(w, 'import')(k, ROOT.RooFit.Rename("k"))
 
     # Print workspace contents
     w.Print()
