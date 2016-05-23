@@ -3,7 +3,9 @@ pyROOT version of RooFit tutorials
 
 Original C-version can be found in [cpp](cpp) (taken from https://root.cern.ch/root/html/tutorials/roofit/)
 
-Currently available:
+These scripts have been tested with ROOT 6.06/04.
+
+List of scripts:
 
 1. [rf101_basics.py](rf101_basics.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #101
 2. [rf102_dataimport.py](rf102_dataimport.py) 'BASIC FUNCTIONALITY' RooFit tutorial macro #102
@@ -81,3 +83,10 @@ Currently available:
 74. [rf706_histpdf.py](rf706_histpdf.py) 'SPECIAL PDFS' RooFit tutorial macro #706
 75. [rf707_kernelestimation.py](rf707_kernelestimation.py) 'SPECIAL PDFS' RooFit tutorial macro #707
 76. [rf708_bphysics.py](rf708_bphysics.py) 'SPECIAL PDFS' RooFit tutorial macro #708
+77. [rf801_mcstudy.py](rf801_mcstudy.py) 'VALIDATION AND MC STUDIES' RooFit tutorial macro #801
+78. [rf802_mcstudy_addons.py](rf802_mcstudy_addons.py) 'VALIDATION AND MC STUDIES' RooFit tutorial macro #802
+79. [rf803_mcstudy_addons2.py](rf803_mcstudy_addons2.py) 'VALIDATION AND MC STUDIES' RooFit tutorial macro #803
+80. [rf804_mcstudy_constr.py](rf804_mcstudy_constr.py) 'VALIDATION AND MC STUDIES' RooFit tutorial macro #804
+81. [rf901_numintconfig.py](rf901_numintconfig.py) 'NUMERIC ALGORITHM TUNING' RooFit tutorial macro #901
+82. [rf902_numgenconfig.py](rf902_numgenconfig.py) 'NUMERIC ALGORITHM TUNING' RooFit tutorial macro #902
+83. [rf903_numintcache.py](rf903_numintcache.py) 'NUMERIC ALGORITHM TUNING' RooFit tutorial macro #903
