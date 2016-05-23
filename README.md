@@ -63,5 +63,13 @@ Currently available:
 56. [rf511_wsfactory_basic.py](rf511_wsfactory_basic.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #511
 57. [rf512_wsfactory_oper.py](rf512_wsfactory_oper.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #512
 58. [rf513_wsfactory_tools.py](rf513_wsfactory_tools.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #513
-
+59. [rf601_intminuit.py](rf601_intminuit.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #601
+60. [rf602_chi2fit.py](rf602_chi2fit.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #602
+61. [rf603_multicpu.py](rf603_multicpu.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #603
+62. [rf604_constraints.py](rf604_constraints.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #604
+63. [rf605_profilell.py](rf605_profilell.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #605
+64. [rf606_nllerrorhandling.py](rf606_nllerrorhandling.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #606  new
+65. [rf607_fitresult.py](rf607_fitresult.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #607
+66. [rf608_fitresultaspdf.py](rf608_fitresultaspdf.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #608
+67. [rf609_xychi2fit.py](rf609_xychi2fit.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #609
 68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610
