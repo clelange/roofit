@@ -50,5 +50,18 @@ Currently available:
 43. [rf405_realtocatfuncs.py](rf405_realtocatfuncs.py) 'DATA AND CATEGORIES' RooFit tutorial macro #405
 44. [rf406_cattocatfuncs.py](rf406_cattocatfuncs.py) 'DATA AND CATEGORIES' RooFit tutorial macro #406
 45. [rf407_latextables.py](rf407_latextables.py) 'DATA AND CATEGORIES' RooFit tutorial macro #407
+46. [rf501_simultaneouspdf.py](rf501_simultaneouspdf.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #501
+47. [rf502_wspacewrite.py](rf502_wspacewrite.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #502
+48. [rf503_wspaceread.py](rf503_wspaceread.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #503
+49. [rf504_simwstool.py](rf504_simwstool.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #504
+50. [rf505_asciicfg.py](rf505_asciicfg.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #505
+51. [rf506_msgservice.py](rf506_msgservice.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #506
+52. [rf507_debugtools.py](rf507_debugtools.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #507
+53. ~~[rf508_listsetmanip.py](rf508_listsetmanip.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #508~~ - not working
+54. [rf509_wsinteractive.py](rf509_wsinteractive.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #509
+55. [rf510_wsnamedsets.py](rf510_wsnamedsets.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #510
+56. [rf511_wsfactory_basic.py](rf511_wsfactory_basic.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #511
+57. [rf512_wsfactory_oper.py](rf512_wsfactory_oper.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #512
+58. [rf513_wsfactory_tools.py](rf513_wsfactory_tools.py) 'ORGANIZATION AND SIMULTANEOUS FITS' RooFit tutorial macro #513
 
 68. [rf610_visualerror.py](rf610_visualerror.py) 'LIKELIHOOD AND MINIMIZATION' RooFit tutorial macro #610
