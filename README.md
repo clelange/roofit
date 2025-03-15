@@ -1,6 +1,8 @@
 # roofit
 pyROOT version of RooFit tutorials
 
+***Please note: All the examples should be available at <https://root.cern/doc/master/group__tutorial__roofit__main.html> (which is also where they are being maintained).***
+
 Original C-version can be found in [cpp](cpp) (taken from https://root.cern.ch/root/html/tutorials/roofit/)
 
 These scripts have been tested with ROOT 6.06/04.
